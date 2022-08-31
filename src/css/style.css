@@ -37,3 +37,7 @@ header .navbar a i {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+.container .button{
+    padding-bottom: 20px;
+}
