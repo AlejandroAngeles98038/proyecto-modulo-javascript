@@ -6,57 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- CSS ONLY -->
-    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/1a7569622b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar is-link">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="">
-            <!-- <img src="" alt="" width="112" height="28"> -->
-          </a>
-          <div role="button" class="navbar-burger " aria-label="menu" aria-expanded="true" data-target="navbarExampleTransparentExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </div>
-        </div>
-      
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-          <div class="navbar-start">
+
+  <header>
+    
+      <nav class="navbar is-link">
+          <div class="navbar-brand">
             <a class="navbar-item" href="">
-              Home
+              <h2 class="logotipo">Fortuna</h2>
+              <!-- <img src="" alt="" width="112" height="28"> -->
             </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="#">
-                Trivias
+            <div role="button" class="navbar-burger " aria-label="menu" aria-expanded="true" data-target="navbarExampleTransparentExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </div>
+          </div>
+      
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-size-5" href="">
+                <i class="fa-solid fa-house"></i>   Home
               </a>
-              <div class="navbar-dropdown is-boxed">
-                <a class="navbar-item" href="">
-                  Conocimiento General
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-size-5" href="#">
+                  <i class="fa-solid fa-clipboard-question"></i>    Trivias
                 </a>
-                <a class="navbar-item" href="">
-                  Matematicas
-                </a>
-                <a class="navbar-item" href="">
-                  Historia
-                </a>
-                <a class="navbar-item" href="">
-                  Layout
-                </a>
-                <a class="navbar-item" href="">
-                  Form
-                </a>
-                <a class="navbar-item" href="">
-                    Form
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item is-size-5" href="">
+                    Conocimiento General
                   </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Matematicas
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Historia
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Lógica
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Arte
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                      Deportes
+                    </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav> 
-
+        </nav>
+    
+    </header>
     
     
 <script src="./src/js/index.js"></script>
