@@ -15,3 +15,25 @@ header .navbar a i {
     padding-left: 8px;
     padding-right: 10px;
 }
+
+.container{
+    width: 97%;
+    margin: auto;
+}
+
+.container h1{
+    font-family: 'Halant', serif;
+    font-size: 80px;
+    color: #0174DF;
+    text-align: center;
+}
+
+.container .parent{
+    text-align: center;
+}
+
+.container .libro{
+    width: 500px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
