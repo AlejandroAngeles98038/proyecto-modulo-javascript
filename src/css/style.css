@@ -17,7 +17,7 @@ header .navbar a i {
 }
 
 .container{
-    width: 97%;
+    width: 98%;
     margin: auto;
 }
 
@@ -41,4 +41,15 @@ header .navbar a i {
 .container .button{
     margin-bottom: 30px;
 
+}
+
+/*.inicio {
+    background-color:cornflowerblue;
+    padding: 20px;
+    height: 100vh;
+    width: 100wh;
+}  */
+
+.columns .card .card-image .image img{
+    object-fit: cover;
 }

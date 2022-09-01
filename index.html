@@ -1,92 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Trivia Fortuna</title>
     <!-- CSS ONLY -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="./src/css/style.css"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@700&display=swap" rel="stylesheet"> 
-</head>
-<body>
-
-  <header>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <!-- Empieza navbar -->
       <nav class="navbar is-link">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="">
-              <h2 class="logotipo">Fortuna</h2>
-              <!-- <img src="" alt="" width="112" height="28"> -->
-            </a>
-            <div role="button" class="navbar-burger " aria-label="menu" aria-expanded="true" data-target="navbarExampleTransparentExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </div>
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+            <h2 class="logotipo">Fortuna</h2>
+            <!-- <img src="" alt="" width="112" height="28"> -->
+          </a>
+          <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarExampleTransparentExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </div>
-      
-          <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item is-size-5" href="">
-                <i class="fa-solid fa-house"></i>   Home
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item is-size-5" href="">
+              <i class="fa-solid fa-house"></i> Home
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-size-5" href="#">
+                <i class="fa-solid fa-clipboard-question"></i> Trivias
               </a>
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link is-size-5" href="#">
-                  <i class="fa-solid fa-clipboard-question"></i>    Trivias
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item is-size-5" href="">
+                  Conocimiento General
                 </a>
-                <div class="navbar-dropdown is-boxed">
-                  <a class="navbar-item is-size-5" href="">
-                    Conocimiento General
-                  </a>
-                  <a class="navbar-item is-size-5" href="">
-                    Matemáticas
-                  </a>
-                  <a class="navbar-item is-size-5" href="">
-                    Historia
-                  </a>
-                  <a class="navbar-item is-size-5" href="">
-                    Lógica
-                  </a>
-                  <a class="navbar-item is-size-5" href="">
-                    Arte
-                  </a>
-                  <a class="navbar-item is-size-5" href="">
-                      Deportes
-                    </a>
-                </div>
+                <a class="navbar-item is-size-5" href=""> Matemáticas </a>
+                <a class="navbar-item is-size-5" href=""> Historia </a>
+                <a class="navbar-item is-size-5" href=""> Lógica </a>
+                <a class="navbar-item is-size-5" href=""> Arte </a>
+                <a class="navbar-item is-size-5" href=""> Deportes </a>
               </div>
             </div>
           </div>
-        </nav>
-
+        </div>
+      </nav>
     </header>
 
-  <div class="container">
-    <h1>¡Bienvenidos!</h1>
+    <!-- Empieza bienvenida -->
+    <!-- <main class="inicio" id="inicio">  -->
+      <div class="container">
+        <h1>¡Bienvenidos!</h1>
 
-    <p class="is-size-5">
-      Te damos la bienvenida a la trivia Fortuna, nuestra trivia consta de 6 temáticas variadas con las que puedes poner a prueba tus conocimientos. Elige la temática que mas te guste y da tu mejor esfuerzo, te deseamos suerte.
-    </p>
+        <p class="is-size-5">
+          Te damos la bienvenida a la trivia Fortuna, nuestra trivia consta de 6
+          temáticas variadas con las que puedes poner a prueba tus
+          conocimientos. Elige la temática que mas te guste y da tu mejor
+          esfuerzo, te deseamos suerte.
+        </p>
 
-    <div class="parent">
-      <img class="libro" src="./src/img/libro.jpg" alt="libro">
-    </div>
+        <div class="parent">
+          <img class="libro" src="./src/img/libro.jpg" alt="libro" />
+        </div>
 
-    <div class="parent">
-     <button class="button is-success is-size-4">Comenzar</button>
-    </div>
+        <div class="parent">
+          <button type="button" class="button is-success is-size-4">
+            Comenzar
+          </button>
+        </div>
+
+        <!-- Empiezan colums -->
+        <div class="columns is-multiline">
+          <div class="column is-4">
+            <!-- Empiezan colums -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <img src="./src/img/arte.jpg" alt="arte">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">Arte</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-image">
+                    <figure class="image is-1by1">
+                      <img src="./src/img/deportes.png" alt="deportes">
+                    </figure>
+                </div>
+              <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">Deportes</p>
+                  </div>
+              </div>
+            </div>
+
+    
+        </div>
 
 
-  </div>
+      </div>
+     <!-- </main>  -->
 
-<script src="https://kit.fontawesome.com/1a7569622b.js" crossorigin="anonymous"></script>
-<script src="./src/js/index.js"></script>
+    
 
-</body>
+    <script
+      src="https://kit.fontawesome.com/1a7569622b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/index.js"></script>
+  </body>
 </html>
