@@ -16,6 +16,10 @@ header .navbar a i {
     padding-right: 10px;
 }
 
+body{
+    padding-bottom: 40px;
+}
+
 .container{
     width: 98%;
     margin: auto;
@@ -43,6 +47,11 @@ header .navbar a i {
 
 }
 
+div .textoa{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 /*.inicio {
     background-color:cornflowerblue;
     padding: 20px;
@@ -52,4 +61,8 @@ header .navbar a i {
 
 .columns .card .card-image .image img{
     object-fit: cover;
+}
+
+.columns .card .card-content .media-content p {
+    text-align: center;
 }
