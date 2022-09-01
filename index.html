@@ -44,7 +44,7 @@
                   <a class="navbar-item is-size-5" href="">
                     Conocimiento General
                   </a>
-                  <a class="navbar-item is-size-5" href="">
+                  <a class="navbar-item is-size-5" id="math" href="">
                     Matemáticas
                   </a>
                   <a class="navbar-item is-size-5" href="">
@@ -66,8 +66,8 @@
         </nav>
 
     </header>
-
-  <div class="container">
+<!-- 
+  <div class="container" id="content">
     <h1>¡Bienvenidos!</h1>
 
     <p class="is-size-5">
@@ -80,11 +80,39 @@
 
     <div class="parent">
      <button class="button is-success is-size-4">Comenzar</button>
-    </div>
+    </div> -->
 
 
   </div>
+ <div class="columns is-desktop flex" id="triviaContainer">
+        <div class="column is-half">
+            <div class="card ">
+              <header id="category" class="card-header-title flex category ">
+              </header>
+              <header class="card-header quiz-score flex" >
+               <span  id="correct-score"></span>/<span id="total-question"></span>
+              </header>
+                <header class="card-header quiz-question flex" id="question">
+                  <h2 class="quiz-question"></h2>
+                </header>
+                <div class="card-content">
+                  <ul class="quiz-options" id="options">
+                    <li class="selected" id="answer1"></li>
+                    <li id="answer2"></li>
+                    <li id="answer3"></li>
+                    <li id="answer4"></li>
+                  </ul>
+                  <div id="result">
 
+                  </div>
+                  <footer class="card-footer">
+                    <a href="#" id="checkAnswer" class="card-footer-item">Check Answer</a>
+                    <a href="#" class="card-footer-item" id="play-again">Play Again!</a>
+                  </footer>
+            </div>
+        </div>
+      </div>
+     </div>
 <script src="https://kit.fontawesome.com/1a7569622b.js" crossorigin="anonymous"></script>
 <script src="./src/js/index.js"></script>
 
