@@ -152,3 +152,7 @@ header .navbar a i {
 #play-again{
     display: none;
 }
+
+#spinner{
+   margin-left: 300px;
+}

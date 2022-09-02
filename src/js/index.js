@@ -10,6 +10,7 @@ const _totalQuestion = d.getElementById('total-question');
 const checkBtn = d.getElementById('checkAnswer')
 const playAgainBtn = d.getElementById('play-again')
 const result = d.getElementById('result')
+const spinner = d.getElementById('spinner')
 
 
 const events = () => {
@@ -34,13 +35,16 @@ const fetchTrivia1 = async () => {
   const data = await response.json()
   console.log(data);
   result.innerHTML= "";
+  spinner.style.display = "none"
   renderInfo(data.results[0]);
+  
 
 }
 
 
 
 const renderInfo = (data) => {
+      
   checkBtn.disabled = false;
   correctAnswer = data.correct_answer;
   let incorrectAnswer = data.incorrect_answers;
@@ -53,6 +57,7 @@ const renderInfo = (data) => {
             <li> ${index + 1}. <span>${option}</span> </li>
         `).join('')}
     `;
+    
     selectOption()
 }
 
@@ -72,20 +77,26 @@ const selectOption = () =>{
 }
 
 const checkAnswer = () => {
+    
     checkBtn.disabled = true;
     if(options.querySelector('.selected')){
         let selectedAnswer = options.querySelector('.selected span').textContent;
         if(selectedAnswer.trim() == HTMLDecode(correctAnswer)){
+            
             correctScore++;
+            
+            
             result.innerHTML = `<p><i class = "fas fa-check"></i>Correct Answer!</p>`;
         }else{
             result.innerHTML = `<p><i class = "fas fa-times"></i>Incorrect Answer!</p> <small><b>Correct Answer: </b>${correctAnswer}</small>`;
         }
         checkCount();
+         
     }else{
         result.innerHTML = `<p><i class = "fas fa-question"></i>Please select an option!</p>`;
         checkBtn.disabled = false;
     }
+    
 }
 
 function HTMLDecode(textString) {
@@ -93,16 +104,20 @@ function HTMLDecode(textString) {
     return doc.documentElement.textContent;
 }
 
+
 const checkCount = () => {
+    
     askedCount++;
     setCount();
     if(askedCount == totalQuestion){
+        
         result.innerHTML += `<p>Your score is ${correctScore}.</p>`
         playAgainBtn.style.display = "block";
         checkBtn.style.display = "none";
     }else{
         setTimeout(() => {
             fetchTrivia1();
+            
         }, 300)
     }
 }
@@ -113,13 +128,12 @@ const setCount = () => {
 }
 
 const restartQuiz = () => {
+    spinner.style.display = "block" 
     correctScore = askedCount = 0;
     playAgainBtn.style.display = "none";
     checkBtn.style.display = "block";
     checkBtn.disabled = false;
     setCount();
     fetchTrivia1()
-
-
 
 }
